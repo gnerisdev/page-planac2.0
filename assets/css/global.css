@@ -8,6 +8,10 @@
   --text-small: 1.4rem;
   --text-normal: 1.6rem;
   --text-medium: 2.2rem;
+  --text-large: 2.4rem;
+  --text-large-x: 2.6rem;
+  --text-large-xx: 2.8rem;
+  --text-large-xxx: 3rem;
 }
 
 html {
@@ -50,6 +54,10 @@ html {
   }
 }
 
+.text-highlight {
+  color: var(--color-highlight);
+}
+
 strong {
   font-weight: bold;
 }
@@ -61,13 +69,14 @@ strong {
   border-radius: 8px;
   border: none;
   padding: 16px 56px;
-  font-size: var(--text-normal);
+  font-size: var(--text-small);
+  font-weight: 500;
 }
 
 /* Header */
-header {
+.header {
   position: fixed;
-  top: 32px;
+  top: 24px;
   left: 50%;
   transform: translateX(-50%);
   width: 88%;
@@ -101,11 +110,22 @@ header {
   width: 100%;
 }
 
+.header__nav__list li.active {
+  background: #06102B 0% 0% no-repeat padding-box;
+  border: 1px solid #1F2E6E;
+  border-radius: 100px;
+  padding: 8px 24px;
+}
+
 .header__nav__list a {
   color: var(--color-white);
   font-weight: 400;
   font-size: var(--text-small);
   text-decoration: none;
+}
+
+.header__nav__list a:hover {
+  color: var(--color-highlight);
 }
 
 .scroll-arrow {
@@ -157,11 +177,11 @@ header {
 }
 
 .footer__logo {
-  margin-bottom: 30px;
+  margin: 16px 0;
 }
 
 .footer__logo img {
-  max-width: 200px;
+  max-width: 220px;
   height: auto;
 }
 
@@ -183,4 +203,31 @@ header {
   margin-top: 20px;
   font-size: var(--text-small);
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button Whatsapp */
+#whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #00CB56;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+#whatsapp-button:hover {
+  background-color: #20b954;
 }

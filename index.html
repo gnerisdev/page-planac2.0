@@ -14,7 +14,7 @@
     <div class="scroll-arrow left-arrow"></div>
     <nav class="header__nav">
       <ul class="header__nav__list">
-        <li>
+        <li class="active">
           <a href="/">SOBRE NÓS</a>
         </li>
         <li>
@@ -39,22 +39,25 @@
 
   <main>
     <section class="section section-hero">
-      <img class="section-hero__bg" src="./assets/images/01-BG.png" alt="">
+      <img class="section-hero__bg" src="./assets/images/01-BG.png" aria-hidden="true">
 
-      <div class="container">
-        <div class="section-hero__content">
-          <div>
-            <h1>
-              Soluções ágeis de TI para transformar seu negócio com eficiência e inovação.
-            </h1>
-            <p class="text">
-              A Planac I.T. é sinônimo de excelência em tecnologia, oferecendo produtos e
-              serviços sob medida para otimizar a gestão de TI das empresas.
-            </p>      
-          </div>
+      <div class="section-hero__content">
+        <article class="section-hero__intro">
+          <img src="./assets/images/logo-white.png" class="section-hero__logo" alt="Logo Planac IT">
+          <h1 class="text">
+            Soluções ágeis de TI para transformar seu negócio com eficiência e inovação.
+          </h1>
+          <p class="text">
+            A Planac I.T. é sinônimo de <strong>excelência em tecnologia</strong>, 
+            oferecendo produtos e serviços sob medida para otimizar a gestão de 
+            <strong>TI das empresas.</strong> 
+          </p>      
+          <button class="button section-hero__button">
+            FALE CONOSCO
+          </button>
+        </article>
 
-          <img src="./assets/images/NOTEBOOK.png" alt="" srcset="">
-        </div>
+        <img src="./assets/images/NOTEBOOK.png" class="section-hero__img-notebook" aria-hidden="true">
       </div>
     </section>
     
@@ -107,57 +110,61 @@
         <ul class="section-differences__cards">
           <li class="section-differences__card">
             <div class="section-differences__card__top">
-              <span></span>
+              <span>
+                <img src="./assets/images/icon-solution.svg" alt="Ícone Ideia">
+              </span>
               <div>
                 <h2>SOLUÇÕES PERSONALIZADAS</h2>
               </div>
             </div>
             <p class="text">
-              Oferecemos soluções sob medida, alinhada às
-              necessidades específicas de cada cliente, com a mais alta
-              tecnologia para diferentes segmentos.
+              Oferecemos soluções sob medida, alinhadas às necessidades específicas 
+              de cada cliente, com a mais alta tecnologia para diferentes segmentos.
             </p>
           </li>
 
           <li class="section-differences__card">
             <div class="section-differences__card__top">
-              <span></span>
+              <span>
+                <img src="./assets/images/icon-ray.svg" alt="Ícone Raio">
+              </span>
               <div>
                 <h2>AGILIDADE E EFICIÊNCIA</h2>
               </div>
             </div>
             <p class="text">
-              Nosso modelo de trabalho e otimizado para garantir rapidez nas
-              respostas e soluções escaláveis, com foco na redução de custos
-              e aumento da produtividade.
+              Nosso modelo de trabalho é otimizado para garantir rapidez nas respostas 
+              e soluções escaláveis, com foco na redução de custos e aumento da produtividade.
             </p>
           </li>
 
           <li class="section-differences__card">
             <div class="section-differences__card__top">
-              <span></span>
+              <span>
+                <img src="./assets/images/icon-computer.svg" alt="Ícone Computador">
+              </span>
               <div>
-                <h2>LOCAÇÕES DE EQUIPAMENTOS</h2>
+                <h2>LOCAÇÃO DE EQUIPAMENTOS</h2>
               </div>
             </div>
             <p class="text">
-              Oferecemos soluções sob medida, alinhada às
-              necessidades específicas de cada cliente, com a mais alta
-              tecnologia para diferentes segmentos
+              Oferecemos a possibilidade de locação de equipamentos de TI, permitindo que sua empresa 
+              mantenha a infraestrutura sempre atualizada, sem grandes investimentos iniciais.
             </p>
           </li>
 
           <li class="section-differences__card">
             <div class="section-differences__card__top">
-              <span></span>
+              <span>
+                <img src="./assets/images/icon-support.svg" alt="Ícone Suporte">
+              </span>
               <div>
-                <h2>SUPORTE ESPECIALIZADOS</h2>
+                <h2>SUPORTE ESPECIALIZADO</h2>
               </div>
             </div>
             <p class="text">
-              Oferecemos soluções sob medida, alinhada às
-              necessidades específicas de cada cliente, com a mais alta
-              tecnologia para diferentes segmentos
+              Nossa equipe altamente qualificada oferece suporte completo, auxiliando na implementação, 
+              manutenção e evolução de suas soluções de TI.
             </p>
           </li>
         </ul>
@@ -235,7 +242,9 @@
               Granja  Viana, no Centro Empresarial e Comercial Open Mall The Square.</strong> 
               <br> <br>
                 
-              <strong>Rod. Raposo Tavares - Granja Viana, Cotia - SP, 06709-900</strong> 
+              <strong class="text-highlight">
+                Rod. Raposo Tavares - Granja Viana, Cotia - SP, 06709-900
+              </strong> 
             </p>  
 
             <button class="section-location__button-waze" aria-label="Abrir localização no waze">
@@ -258,7 +267,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__logo">
-        <img src="https://i.imgur.com/your-planac-logo.png" alt="Planac IT Logo">
+        <img src="./assets/images/logo.png" alt="Planac IT Logo">
       </div>
       <div class="footer__contact-info">
         <p><strong>Tel:</strong> 11.2222-1800</p>
@@ -273,6 +282,10 @@
       </div>
     </div>
   </footer>
+
+  <button id="whatsapp-button" title="Fale conosco no WhatsApp">
+    <img src="./assets/images/icon-whatsapp.svg" alt="Ícone Whatsapp">
+  </button>
 
   <script src="./assets/js/global.js"></script>
   <script src="./assets/js/index.js"></script>
