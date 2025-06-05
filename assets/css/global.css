@@ -80,7 +80,7 @@ strong {
   top: 24px;
   left: 50%;
   transform: translateX(-50%);
-  width: 88%;
+  width: 96%;
   height: 48px;
   background: #11173B80 0% 0% no-repeat padding-box;
   border: 1px solid #1A256B;
@@ -88,6 +88,11 @@ strong {
   z-index: 2;
   display: flex; 
   align-items: center;
+}
+@media (min-width: 576px) {
+  .header {
+    width: 88%;
+  }
 }
 
 .header__nav {
@@ -106,9 +111,14 @@ strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 32px;
+  gap: 24px;
   white-space: nowrap;
   width: 100%;
+}
+@media (min-width: 576px) {
+  .header__nav__list {
+    gap: 32px;
+  }
 }
 
 .header__nav__list li.active {
