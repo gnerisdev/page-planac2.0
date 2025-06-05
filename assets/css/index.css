@@ -84,6 +84,7 @@
   border-radius: 35px;
   font-size: var(--text-small);
   margin-top: 2rem;
+  text-decoration: none;
 }
 
 /* Section About */
@@ -318,6 +319,10 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.section-differences__wrapper-button a {
+  text-decoration: none;
 }
 
 /* Section Partners */
