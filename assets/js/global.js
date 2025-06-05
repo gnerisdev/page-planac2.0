@@ -2,21 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.header__nav');
   const leftArrow = document.querySelector('.left-arrow');
   const rightArrow = document.querySelector('.right-arrow');
+  const activeItem = document.querySelector('.header__nav__list .active');
 
-  const scrollAmount = 150; // How many pixels to scroll
+  const scrollAmount = 180; 
 
   leftArrow.addEventListener('click', () => {
-    nav.scrollBy({
-      left: -scrollAmount,
-      behavior: 'smooth'
-    });
+    nav.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
 
   rightArrow.addEventListener('click', () => {
-    nav.scrollBy({
-      left: scrollAmount,
-      behavior: 'smooth'
-    });
+    nav.scrollBy({ left: scrollAmount, behavior: 'smooth' });
   });
 
   const checkScroll = () => {
@@ -38,6 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   nav.addEventListener('scroll', checkScroll);
-  window.addEventListener('resize', checkScroll); 
+  window.addEventListener('resize', checkScroll);
+
+  if (activeItem) {
+    activeItem.scrollIntoView({ behavior: 'auto', inline: 'center' });
+    nav.dispatchEvent(new Event('scroll'));
+  }
+
   checkScroll();
 });

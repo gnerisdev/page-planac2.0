@@ -131,8 +131,13 @@ strong {
 .header__nav__list a {
   color: var(--color-white);
   font-weight: 400;
-  font-size: var(--text-small);
+  font-size: 1.1rem;
   text-decoration: none;
+}
+@media (min-width: 576px) {
+  .header__nav__list a {
+    font-size: var(--text-small);
+  }
 }
 
 .header__nav__list a:hover {
@@ -221,8 +226,8 @@ strong {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background-color: #00CB56;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -235,8 +240,8 @@ strong {
 }
 
 #whatsapp-button img {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
 }
 
 #whatsapp-button:hover {
