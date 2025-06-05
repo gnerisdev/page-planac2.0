@@ -41,4 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   checkScroll();
+
+  // header background
+  const header = document.querySelector('.header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      header.classList.add('bg-color')
+    } else {
+      header.classList.remove('bg-color')
+    }
+  })
 });
