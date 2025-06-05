@@ -12,6 +12,7 @@
   --text-large-x: 2.6rem;
   --text-large-xx: 2.8rem;
   --text-large-xxx: 3rem;
+  --text-large-xl: 4rem;
 }
 
 html {
@@ -129,8 +130,8 @@ strong {
 }
 
 .scroll-arrow {
-  width: 24px; 
-  height: 24px;
+  width: 22px; 
+  height: 22px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   display: flex;
@@ -149,20 +150,20 @@ strong {
 .scroll-arrow::before {
   content: '';
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border-top: 2px solid #FFFFFF;
   border-right: 2px solid #FFFFFF;
 }
 
 .left-arrow::before {
   transform: rotate(-135deg);
-  margin-right: 2px; 
+  margin-right: 0; 
 }
 
 .right-arrow::before {
   transform: rotate(45deg);
-  margin-left: 2px; 
+  margin-left: 0; 
 }
 
 /* Footer */

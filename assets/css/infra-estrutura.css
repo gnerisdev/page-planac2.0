@@ -29,10 +29,10 @@
 }
 @media (min-width: 992px) {
   .section-hero__decorate-left {
-  max-height: 180px;
-  position: absolute;
-  top: 40%;
-}
+    max-height: 180px;
+    position: absolute;
+    top: 40%;
+  }
 }
 
 .section-hero__decorate-right {
