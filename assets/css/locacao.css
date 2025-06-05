@@ -3,6 +3,8 @@
 .main {
   background: var(--color-bg);
   padding-bottom: 56px;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -11,6 +13,8 @@
 
 .section {
   padding: 40px 0;
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 576px) {
   .section {
@@ -126,6 +130,7 @@
 @media (min-width: 992px) {
   .section-benefits__title {
     margin-right: 80px;
+    margin-top: 32px;
   }
 }
 @media (min-width: 576px) {
